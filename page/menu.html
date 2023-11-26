@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/vendors/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/assets/vendors/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/vendors/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/vendors/OwlCarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/assets/vendors/OwlCarousel/dist/assets/owl.theme.green.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://web.nvnstatic.net/css/fontAwesome/font-awesome-4.7.0.min.css?v=2"
+        type="text/css" />
+    <link rel="shortcut icon" href="/assets/vendors/image/favicon.ico" type="image/x-icon">
+    <title>Thực Đơn</title>
+</head>
+
+<body class="page-index">
+    <header class="header tp-header" id="navbars">
+        <nav class="main-header ">
+            <div class="container">
+                <div class="relative header-top clearfix a-center row align-items-center">
+                    <div class="col-3 d-block d-lg-none">
+                        <div class="a-center toggle-nav  menu-bar">
+                            <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="header-content justify-content-center clearfix a-center">
+                            <div class="logo inline-block">
+                                <a href="/index.html" class="logo-wrapper">
+                                    <img src="/assets/vendors/image/logo-Sunhomes-BBQ-01.png" alt="logo" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <div class="menu-offcanvas sidenav open" id="sidenav">
+                            <div class="head-menu  list-inline-phone clearfix d-block d-lg-none">
+                                <ul class="list-inline d-inline-block flex-nowrap">
+                                    <li class="list-inline-phone">
+                                        <div class="Phone"><a href class="nav-link  tp_menu_item"><span>Hotline:
+                                                    0909.009.009</span></a></div>
+                                    </li>
+                                </ul>
+                                <div class="menuclose">
+                                    <a href="javascript:void(0)" class onclick="closeNav()"><i
+                                            class="bi-x fa-solid fa-xmark fa-2x"></i></a>
+                                </div>
+                            </div>
+                            <div id="nav-mobile" class="menuMobile nav-left  hidden-md hidden-lg open">
+                                <ul class="nav-bottom  nav nav-left tp-menu">
+                                    <li class="nav-item">
+                                        <a href="/index.html" class="nav-link tp_menu_items" target="_self">
+                                            <span>Trang chủ</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/page/Introduce.html" class="nav-link tp_menu_items" target="_self">
+                                            <span>Giới thiệu</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Set_Table.html" class="nav-link tp_menu_items" target="_self">
+                                            <span>Đặt bàn</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="menu.html" class="nav-link tp_menu_item" target="_self">
+                                            <span>Thực đơn</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Recruitment.html" class="nav-link tp_menu_item" target="_self">
+                                            <span>Tuyển dụng
+
+                                            </span>
+                                        </a>
+
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="News.html" class="nav-link tp_menu_item" target="_self">
+                                            <span>Tin Tức</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Contact.html" class="nav-link tp_menu_item" target="_self">
+                                            <span>Liên hệ </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item d-lg-none d-flex">
+                                        <a href="#" class="nav-link tp_menu_item fa fa-facebook"></a>
+                                        <a href="#" class="nav-link tp_menu_item fa fa-instagram"></a>
+                                        <a href="#" class="nav-link tp_menu_item fa fa-twitter"></a>
+                                        <a href class="nav-link tp_menu_item fa fa-envelope"></a>
+                                    </li>
+                                    <li class="nav-item d-none d-lg-block">
+                                        <div class="Phone"><a href class="nav-link  tp_menu_item"><span>Hotline:
+                                                    0909.009.009</span></a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="slider-page">
+            <div class="">
+                <div class="slider-img imgae">
+                    <img src="/assets/vendors/image/banner-234.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="section menus-section">
+            <div class="container">
+
+                <div class="menu-col-inner">
+                    <div class="tabled-content">
+                        <h4 class="text-uppercase text-center">Thực đơn tại nhà hàng</h4>
+                        <ul class="nav nav-tabs d-flex text-center justify-content-center" role="tablist">
+                            <li class="tab active has-icon nav-item"><a class="nav-link active" data-bs-toggle="tab"
+                                    href="#tab-grill"><span>Chọn móm nướng</span></a></li>
+                            <li class="tabs has-icon nav-item"><a class="nav-link" data-bs-toggle="tab"
+                                    href="#tab-Attractivecombo"><span>Combo xèo
+                                        xéo</span></a></li>
+                        </ul>
+                        <div class="tab-pane tab-content">
+                            <div class=" tab-pane active entry-content" id="tab-grill">
+                                <p><span><em>* Áp dụng cho tất cả các ngày trong
+                                            tuần</em></span></p>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                        <div class="menu-col-inner menus-list">
+                                            <div class="menus-img">
+                                                <div class="img-item imgae">
+                                                    <img src="/assets/vendors/image/menu/blackbean-noodles.png" alt=""
+                                                        srcset="">
+                                                </div>
+                                            </div>
+                                            <div class="item-list-menu">
+                                                <p class="menu-title"><span><strong>Các Loại
+                                                            Mỳ</strong></span></p>
+                                                <ul class="menu-list">
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i> Mỳ
+                                                        trộn lạnh</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i> Mỳ
+                                                        lạnh nước</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i> Gà
+                                                        xào phô mai</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i> Mỳ
+                                                        đen</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i> Mỳ bò
+                                                        Hàn Quốc</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i> Miến
+                                                        xào Hàn Quốc</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                        <div class="menu-col-inner menus-list">
+                                            <div class="menus-img">
+                                                <div class="img-item imgae">
+                                                    <img src="/assets/vendors/image/menu/banh.png" alt="" srcset="">
+                                                </div>
+                                            </div>
+                                            <div class="item-list-menu">
+                                                <p class="menu-title"><span><strong>Cơm và bánh</strong></span></p>
+                                                <ul class="menu-list">
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Cơm
+                                                        trộm bát đá nóng</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Cơm
+                                                        trộn Hàn QUốc</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Bánh
+                                                        Hải Sản</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Bánh
+                                                        Mandu</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Bánh
+                                                        bí Hàn Quốc</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Bánh
+                                                        trứng</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                        <div class="menu-col-inner menus-list">
+                                            <div class="menus-img">
+                                                <div class="img-item imgae">
+                                                    <img src="/assets/vendors/image/menu/lau2.jpg" alt="" srcset="">
+                                                </div>
+                                            </div>
+                                            <div class="item-list-menu">
+                                                <p class="menu-title"><span><strong>Lẩu</strong></span></p>
+                                                <ul class="menu-list">
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i> Lẩu
+                                                        bulgogi</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Lẩu
+                                                        sườn sụn
+                                                    </li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Lẩu
+                                                        sườn heo kim chi</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i> Lẩu
+                                                        bò</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i> Lẩu
+                                                        kim chi</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i> Lẩu
+                                                        thái cay</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                        <div class="menu-col-inner menus-list">
+                                            <div class="menus-img">
+                                                <div class="img-item imgae">
+                                                    <img src="/assets/vendors/image/menu/thit-heo-2-jpg.png" alt=""
+                                                        srcset="">
+                                                </div>
+                                            </div>
+                                            <div class="item-list-menu">
+                                                <p class="menu-title"><span><strong>Thịt heo</strong></span></p>
+                                                <ul class="menu-list">
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i> Ba
+                                                        chỉ heo mỹ</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Nạc
+                                                        vai heo
+                                                    </li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Sườn
+                                                        heo</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i> Sụn
+                                                        heo: 139K</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i> Thịt
+                                                        heo đặc biệt</li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                        <div class="menu-col-inner menus-list">
+                                            <div class="menus-img">
+                                                <div class="img-item imgae">
+                                                    <img src="/assets/vendors/image/menu/thit-bo-2.png" alt=""
+                                                        srcset="">
+                                                </div>
+                                            </div>
+                                            <div class="item-list-menu">
+                                                <p class="menu-title"><span><strong>Thịt bò</strong></span></p>
+                                                <ul class="menu-list">
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Dẻ
+                                                        sườn bò Mỹ ướp sốt</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Ba chỉ
+                                                        bò Mỹ
+                                                    </li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Cồ bò
+                                                        Mỹ Gogi</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i> Nạc
+                                                        vai bò Mỹ</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Sườn
+                                                        nom bò Mỹ</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Dẽ
+                                                        sườn bò tươi</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Gầu bò
+                                                        MỸ ướp muối</li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                        <div class="menu-col-inner menus-list">
+                                            <div class="menus-img">
+                                                <div class="img-item imgae">
+                                                    <img src="/assets/vendors/image/menu/canh1.jpg" alt="" srcset="">
+                                                </div>
+                                            </div>
+                                            <div class="item-list-menu">
+                                                <p class="menu-title"><span><strong>Canh</strong></span></p>
+                                                <ul class="menu-list">
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Canh
+                                                        kim chi</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Cach
+                                                        bò cay
+                                                    </li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Canh
+                                                        đậu phụ</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Canh
+                                                        rong biển</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Canh
+                                                        rong biển ngao</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Canh
+                                                        thịt ba chỉ</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                        <div class="menu-col-inner menus-list">
+                                            <div class="menus-img">
+                                                <div class="img-item imgae">
+                                                    <img src="/assets/vendors/image/menu/01-soda-alternatives-orange-juice.png"
+                                                        alt="" srcset="">
+                                                </div>
+                                            </div>
+                                            <div class=" item-list-menu">
+                                                <p class="menu-title"><span><strong>Các loại nước
+                                                            uống</strong></span>
+                                                </p>
+                                                <ul class="menu-list">
+                                                    <li class="bullet-checkmark"><i
+                                                            class="fa-solid fa-check"></i>Passion Juice</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Chanh
+                                                        đá
+                                                    </li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Chanh
+                                                        muối</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>
+                                                        Nước
+                                                        cam</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Sinh
+                                                        tố xoài</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Trà hồ
+                                                        đào</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>BERRY
+                                                        COLADA</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>RED
+                                                        WINE SANGRIA</li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                        <div class="menu-col-inner menus-list">
+                                            <div class="menus-img">
+                                                <div class="img-item imgae">
+                                                    <img src="/assets/vendors/image/menu/nuoc-hoa-qua.png" alt=""
+                                                        srcset="">
+                                                </div>
+                                            </div>
+                                            <div class=" item-list-menu">
+                                                <p class="menu-title"><span><strong>Nước hoa quả</strong></span>
+                                                </p>
+                                                <ul class="menu-list">
+                                                    <li class="bullet-checkmark"><i
+                                                            class="fa-solid fa-check"></i>SPARKLE HƯƠNG TÁO</li>
+                                                    <li class="bullet-checkmark"><i
+                                                            class="fa-solid fa-check"></i>GRANITA DÂU
+                                                    </li>
+                                                    <li class="bullet-checkmark"><i
+                                                            class="fa-solid fa-check"></i>GRANITA KIWI</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>
+                                                        PASSION COLADA</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>BERRY
+                                                        COLADA</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Trà hồ
+                                                        đào</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>GREEN
+                                                        APPLE RICE</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>WATER
+                                                        MELON RICE</li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                        <div class="menu-col-inner menus-list">
+                                            <div class="menus-img">
+                                                <div class="img-item imgae">
+                                                    <img src="/assets/vendors/image/menu/763sodaglasses-1.png" alt=""
+                                                        srcset="">
+                                                </div>
+                                            </div>
+                                            <div class=" item-list-menu">
+                                                <p class="menu-title"><span><strong>Nước hoa quả</strong></span>
+                                                </p>
+                                                <ul class="menu-list">
+                                                    <li class="bullet-checkmark"><i
+                                                            class="fa-solid fa-check"></i>SPARKLE HƯƠNG
+                                                        TÁO</li>
+                                                    <li class="bullet-checkmark"><i
+                                                            class="fa-solid fa-check"></i>GRANITA DÂU
+                                                    </li>
+                                                    <li class="bullet-checkmark"><i
+                                                            class="fa-solid fa-check"></i>GRANITA KIWI
+                                                    </li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>
+                                                        PASSION COLADA</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>BERRY
+                                                        COLADA</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Trà hồ
+                                                        đào</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>GREEN
+                                                        APPLE RICE</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>WATER
+                                                        MELON RICE</li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" tab-pane  entry-content fade" id="tab-Attractivecombo">
+                                <p><span><em>* Combo xèo xèo thỏa thích dành cho tất cả các ngày trong tuần:</em></span>
+                                </p>
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                        <div class="menu-col-inner menus-list">
+                                            <div class="menus-img">
+                                                <div class="img-item imgae">
+                                                    <img src="/assets/vendors/image/menu/thit-heo-2-jpg.png" alt=""
+                                                        srcset="">
+                                                </div>
+                                            </div>
+                                            <div class="item-list-menu">
+                                                <p class="menu-title"><span><strong>Thịt heo</strong></span></p>
+                                                <ul class="menu-list">
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i> Ba
+                                                        chỉ heo mỹ</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Nạc
+                                                        vai heo
+                                                    </li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Sườn
+                                                        heo</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i> Sụn
+                                                        heo: 139K</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i> Thịt
+                                                        heo đặc biệt</li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                        <div class="menu-col-inner menus-list menus-list">
+                                            <div class="menus-img">
+                                                <div class="img-item imgae">
+                                                    <img src="/assets/vendors/image/menu/thit-bo-2.png" alt=""
+                                                        srcset="">
+                                                </div>
+                                            </div>
+                                            <div class="item-list-menu">
+                                                <p class="menu-title"><span><strong>Thịt bò</strong></span></p>
+                                                <ul class="menu-list">
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Dẻ
+                                                        sườn bò Mỹ ướp sốt</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Ba chỉ
+                                                        bò Mỹ
+                                                    </li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Cồ bò
+                                                        Mỹ Gogi</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i> Nạc
+                                                        vai bò Mỹ</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Sườn
+                                                        nom bò Mỹ</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Dẽ
+                                                        sườn bò tươi</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Gầu bò
+                                                        MỸ ướp muối</li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                        <div class="menu-col-inner menus-list menus-list">
+                                            <div class="menus-img">
+                                                <div class="img-item imgae">
+                                                    <img src="/assets/vendors/image/menu/canh1.jpg" alt="" srcset="">
+                                                </div>
+                                            </div>
+                                            <div class="item-list-menu">
+                                                <p class="menu-title"><span><strong>Canh</strong></span></p>
+                                                <ul class="menu-list">
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Canh
+                                                        kim chi</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Cach
+                                                        bò cay
+                                                    </li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Canh
+                                                        đậu phụ</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Canh
+                                                        rong biển</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Canh
+                                                        rong biển ngao</li>
+                                                    <li class="bullet-checkmark"><i class="fa-solid fa-check"></i>Canh
+                                                        thịt ba chỉ</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer class="footer tp_footer">
+        <div class="content">
+            <div class="site-footer">
+                <div class="footer-inner py-3 py-lg-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                <h3 class="hastog accordion">Giờ Mở Cửa</h3>
+
+                                <h5 class="hastog accordion">Bữa Trưa</h5>
+                                <ul class="list-menu list-showroom panel">
+                                    <li class="clearfix">
+                                        <p>Thứ Hai đến Chủ Nhật 12:00 đến 15:00</p>
+                                    </li>
+                                </ul>
+                                <h5 class="hastog accordion">Bữa Trưa</h5>
+                                <ul class="list-menu list-showroom panel">
+                                    <li class="clearfix">
+                                        <p>Thứ Hai đến Thứ Năm 18:00 đến 22:30</p>
+                                    </li>
+                                    <li class="clearfix">
+                                        <p> Thứ Sáu & Thứ Bảy 17:30 đến 22:30</p>
+                                    </li>
+                                    <li class="clearfix">
+                                        <p>Chủ nhật 18:00 đến 21:30</p>
+                                    </li>
+                                </ul>
+
+
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                <div class="footer-widge">
+                                    <h3 class="hastog accordion"><span>Liên hệ</span></h3>
+                                    <ul class="list-menu list-showroom panel">
+                                        <li style="padding-left: 0;"></li>
+                                        <li class="clearfix"><i class="block_icon fa fa-map-marker"></i>
+                                            110 Trần Hưng Đạo - Kinh Môn - Hải Dương</li>
+                                        <li class="clearfix"><i class="block_icon fa fa-phone"></i>
+                                            <a href="tel:0398248244">
+                                                0398248244 </a>
+                                        </li>
+                                        <li class="clearfix"><i class="block_icon fa fa-envelope"></i>
+                                            <a href="mailto:contact@nhanh.vn">
+                                                anhkunvipzz@gmail.com </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                <div class="footer-widget">
+                                    <h3 class="margin-bottom-20"><span>Kết nối với chúng tôi</span></h3>
+                                    <div class="footerText">
+                                        <div class="fb-page" data-href="https://www.facebook.com/nhanh.vn/"
+                                            data-height="230" data-small-header="false"
+                                            data-adapt-container-width="true" data-hide-cover="false"
+                                            data-show-facepile="true"></div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <a title="facebook" target="_blank" href="https://www.facebook.com/nhanh.vn/"
+                                            class="fb-icon"><i class="fa fa-facebook" aria-hidden="true"></i>
+                                            Facebook</a><a title="instagram" target="_blank"
+                                            href="https://instagram.com/" class="ins-icon"><i class="fa fa-instagram"
+                                                aria-hidden="true"></i>
+                                            Instagram</a><a title="youtube" target="_blank" href="https://youtube.com/"
+                                            class="yt-icon"><i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                            Youtube</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assets/vendors/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="/assets/vendors/OwlCarousel/dist/owl.carousel.js"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/assets/js/style.js"></script>
+
+</body>
+
+</html>
