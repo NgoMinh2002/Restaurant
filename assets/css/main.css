@@ -580,7 +580,7 @@ li.list-text a {
 .news-img {
 
     overflow: hidden;
-    width: 95%;
+    width: 100%;
     margin: auto;
     height: 30vh;
 }
